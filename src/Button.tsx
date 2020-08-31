@@ -1,8 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 
-const Button = ({ title, onClick }: { title: string; onClick: any }) => {
-    console.log(title);
-    return <button onClick={onClick} placeholder="write your product">  {title} </button>;
+type PropType = {
+  title: string;
+  onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+};
+
+const Button: FC<PropType> = ({ title, onClick }) => {
+  return <button onClick={onClick}>{title}</button>;
 };
 
 export default Button;
