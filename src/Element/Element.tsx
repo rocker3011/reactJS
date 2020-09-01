@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Button from "../src/Button";
+import Button from "../Button/Button";
 
 type PropType = {
   item: string;

@@ -10,6 +10,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^5.1.2",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
@@ -17,7 +18,8 @@
     "typescript": "~3.7.2"
   },
   "dependencies": {
-    "@babel/core": "7.9.0",
+    "@babel/core": "^7.11.4",
+    "@material-ui/core": "^4.11.0",
     "@svgr/webpack": "4.3.3",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
@@ -64,6 +66,7 @@
     "sass-loader": "8.0.2",
     "semver": "6.3.0",
     "style-loader": "0.23.1",
+    "styled-components": "^5.1.1",
     "terser-webpack-plugin": "2.3.8",
     "ts-pnp": "1.1.6",
     "url-loader": "2.3.0",

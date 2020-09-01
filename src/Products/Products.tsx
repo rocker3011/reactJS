@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-key */
 import React, { useState, FC } from "react";
-import Button from "../src/Button";
-import Element from "../src/Element";
-import "./App.css";
+import Button from "../Button/Button";
+import Element from "../Element/Element";
 
-const App: FC = () => {
+const Products: FC = () => {
   const [todoTasks, setTodoTasks] = useState<string[]>([]);
   const [product, setProduct] = useState<string>("");
 
@@ -19,6 +18,7 @@ const App: FC = () => {
     setTodoTasks(
       todoTasks.filter((item: string, index: number) => {
         if (index == idx) return false;
+
         return true;
       })
     );
@@ -28,6 +28,7 @@ const App: FC = () => {
     setTodoTasks(
       todoTasks.map((item: string, index: number) => {
         if (index == idx) return product;
+
         return item;
       })
     );
@@ -43,6 +44,7 @@ const App: FC = () => {
       <Button title="Add new" onClick={(): void => addToList(product)} />
       Your list:
       <ul>
+        {" "}
         {todoTasks.map((item: string, index: number) => {
           return (
             <li key={`product-${index}`}>
@@ -54,10 +56,10 @@ const App: FC = () => {
               />{" "}
             </li>
           );
-        })}
+        })}{" "}
       </ul>
     </>
   );
 };
 
-export default App;
+export default Products;
